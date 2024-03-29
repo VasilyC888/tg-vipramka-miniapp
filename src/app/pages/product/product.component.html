@@ -1,0 +1,19 @@
+<div class="mb header">
+  <button class="header-button" (click)="goBack()">
+    <i class="fa fa-arrow-left"></i>
+    Back
+  </button>
+</div>
+
+<div class="centered">
+  <h2 class="mb">{{ product.title }}</h2>
+  <br />
+  <img [src]="product.image" [alt]="product.title" width="400px">
+  <p class="hint">{{ product.text }}</p>
+  <p class="mb hint">{{ product.time }}</p>
+  <span class="link-section">
+    <img [src]="'../assets/images/instagram-log.png'" width="30px" height="30px">
+
+    <a [href]="product.link" target="_blank">Перейти н нашу страницу</a>
+  </span>
+</div>
